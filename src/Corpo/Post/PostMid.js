@@ -1,9 +1,14 @@
+import React from "react";
 export default function PostMid(props) {
   return (
     <div class="fundo">
       <div class="acoes">
         <div>
-          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon
+            color={props.heart ? "danger" : ""}
+            onClick={() => props.setHeart(!props.heart)}
+            name={props.heart ? "heart" : "heart-outline"}
+          ></ion-icon>
           <ion-icon name="chatbubble-outline"></ion-icon>
           <ion-icon name="paper-plane-outline"></ion-icon>
         </div>

@@ -1,11 +1,3 @@
-function FotoPost(props) {
-  return (
-    <div class="conteudo">
-      <img src={props.img} />
-    </div>
-  );
-}
-
 export default function PostTop(props) {
   return (
     <div>
@@ -19,7 +11,14 @@ export default function PostTop(props) {
         </div>
       </div>
 
-      <FotoPost img={props.img} />
+      <div class="conteudo">
+        <img
+          onClick={() => {
+            if (!props.heart) props.setHeart(!props.heart);
+          }}
+          src={props.img}
+        />
+      </div>
     </div>
   );
 }
