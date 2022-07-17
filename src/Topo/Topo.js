@@ -13,7 +13,7 @@ export default function Topo() {
         </div>
 
         <div class="instagram-mobile">
-          <img src="assets/img/logo.png" />
+          <img src="/assets/img/logo.png" />
         </div>
 
         <div class="pesquisa">
