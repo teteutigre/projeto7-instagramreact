@@ -13,8 +13,9 @@ export default function PostTop(props) {
 
       <div class="conteudo">
         <img
-          onClick={() => {
-            if (!props.heart) props.setHeart(!props.heart);
+          onClick={(event) => {
+            if (!props.heart && event.detail === 2)
+              props.setHeart(!props.heart);
           }}
           src={props.img}
         />
